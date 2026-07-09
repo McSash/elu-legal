@@ -59,11 +59,15 @@
 
   <h2>4. Empfänger und Auftragsverarbeiter</h2>
   <ul>
-    <li><strong>Datenbank-Hosting:</strong> Databricks (Lakebase Postgres, Region EU eu-central-1).</li>
+    <li><strong>Server-Hosting:</strong> Oracle (Oracle Cloud Infrastructure, Region EU Frankfurt).
+      Hier läuft der App-Server, der alle Anfragen der App verarbeitet.</li>
+    <li><strong>Datenbank-Hosting:</strong> Databricks (Lakebase Postgres, Region EU Frankfurt).</li>
     <li><strong>Kartendienste:</strong> Google (Static Maps für Kartenvorschauen, Places für
       Ortsvorschläge). Anfragen laufen über unseren Server; dabei wird die angefragte Adresse bzw.
       Sucheingabe an Google übermittelt.</li>
-    <li><strong>Push-Zustellung und App-Infrastruktur:</strong> Expo (Expo Push Service, EAS Hosting).</li>
+    <li><strong>Push-Zustellung:</strong> Expo (Expo Push Service, Anbieter mit Sitz in den USA). Bei
+      aktivierten Mitteilungen wird dein Push-Token an Expo übermittelt; diese Übermittlung in die
+      USA ist durch EU-Standardvertragsklauseln abgesichert.</li>
   </ul>
 
   <h2>5. Beta-Tests über TestFlight</h2>
